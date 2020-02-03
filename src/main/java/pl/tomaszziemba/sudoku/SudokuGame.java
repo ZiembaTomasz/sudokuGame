@@ -43,7 +43,7 @@ public class SudokuGame {
         List<Integer> noEmpty = new ArrayList<>();
 
         for (int x = 0; x < sudokuBoards.getRows().size(); x++) {
-            for (int y = 0; y < sudokuBoards.getRows().size(); y++) {
+            for (int y = 0; y < sudokuBoards.getRows().get(x).getElements().size(); y++) {
                 SudokuElement checkedElement = sudokuBoards.getRows().get(x).getElements().get(y);
                 if (checkedElement.getValue() != 0) {
                     noEmpty.add(checkedElement.getValue());

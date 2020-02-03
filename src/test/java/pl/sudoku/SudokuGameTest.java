@@ -107,8 +107,6 @@ public class SudokuGameTest {
         assertEquals(7,sudokuRows.get(6).getElements().get(0).getValue());
         assertEquals(2,sudokuRows.get(7).getElements().get(0).getValue());
         assertEquals(1,sudokuRows.get(8).getElements().get(0).getValue());
-
-
     }
 
 }
