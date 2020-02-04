@@ -9,6 +9,5 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 public class SudokuBoards {
-    private List<SudokuRow>rows = new ArrayList<>();
-
+    private List<SudokuRow> rows = new ArrayList<>();
 }

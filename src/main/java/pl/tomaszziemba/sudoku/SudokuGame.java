@@ -121,7 +121,6 @@ public class SudokuGame {
 
             }
         }
-
     }
 
     public List<SudokuElement> getElementsForSquare(SudokuBoards sudokuBoards, int a, int b) {
@@ -243,23 +242,6 @@ public class SudokuGame {
         sudokuRows.add(new SudokuRow(row7));
         sudokuRows.add(new SudokuRow(row8));
         sudokuRows.add(new SudokuRow(row9));
-        SudokuBoards sudokuBoards = new SudokuBoards(sudokuRows);
-        return sudokuBoards;
-    }
-
-    public SudokuBoards createTestTableOne() {
-        List<SudokuElement> row1 = new ArrayList<>();
-        row1.add(new SudokuElement(9));
-        row1.add(new SudokuElement(8));
-        row1.add(new SudokuElement(6));
-        row1.add(new SudokuElement(5));
-        row1.add(new SudokuElement(4));
-        row1.add(new SudokuElement(3));
-        row1.add(new SudokuElement(0));
-        row1.add(new SudokuElement(2));
-        row1.add(new SudokuElement(1));
-        List<SudokuRow> sudokuRows = new ArrayList<>();
-        sudokuRows.add(new SudokuRow(row1));
         SudokuBoards sudokuBoards = new SudokuBoards(sudokuRows);
         return sudokuBoards;
     }
